@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        playwrite: ["var(--font-playwrite)", "sans-serif"],
+        doto: ["var(--font-doto)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
+      },
+      listStyleImage: {
+        component: "url(/svg/component.svg) ",
+      },
     },
   },
   plugins: [],
