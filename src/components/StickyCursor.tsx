@@ -1,5 +1,5 @@
 "use client";
-"@ts ignore";
+"@ts ignore"
 import { useEffect, useRef, useState } from "react";
 import {
   animate,
@@ -47,9 +47,9 @@ const StickyCursor = ({
 
   const manageMouseMove = (e: MouseEvent) => {
     const { clientX, clientY } = e;
-    console.log("reach here move");
+
     const { left, top, height, width } =
-      stickyElement.current.getBoundingClientRect();
+      stickyElement.current?.getBoundingClientRect() || {left: 0, top: 0, height: 0, width: 0};
 
     //center position of the stickyElement
     const center = { x: left + width / 2, y: top + height / 2 };
@@ -92,22 +92,23 @@ const StickyCursor = ({
     animate(
       cursor.current,
       { scaleX: 1, scaleY: 1 },
-      { duration: 0.1 },
-      { type: "spring", stiffness: 1000, damping: 30 }
+      { duration: 0.1 }
     );
   };
 
   useEffect(() => {
+    if (!stickyElement.current ) return;
     stickyElement.current.addEventListener("mouseenter", manageMouseOver);
     stickyElement.current.addEventListener("mouseleave", manageMouseLeave);
     window.addEventListener("mousemove", manageMouseMove);
     return () => {
+      if (!stickyElement.current) return;
       stickyElement.current.removeEventListener("mouseenter", manageMouseOver);
       stickyElement.current.removeEventListener("mouseleave", manageMouseLeave);
       window.removeEventListener("mousemove", manageMouseMove);
     };
   }, [isHovered]);
-  const template = ({ rotate, scaleX, scaleY }) => {
+  const template = ({ rotate, scaleX, scaleY }: any) => {
     return `rotate(${rotate}) scaleX(${scaleX}) scaleY(${scaleY})`;
   };
 
@@ -126,6 +127,7 @@ const StickyCursor = ({
           height: cursorSize,
         }}
         ref={cursor}
+        transition={{ type: "spring", stiffness: 1000, damping: 30 }}
         className="fixed  w-5 h-5 bg-white rounded-full pointer-events-none z-50 mix-blend-difference"
       ></motion.div>
     </div>
