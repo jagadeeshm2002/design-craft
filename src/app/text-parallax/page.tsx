@@ -1,5 +1,7 @@
+"use client"
 import Lenis from "lenis";
 import React, { useEffect } from "react";
+
 
 interface PageProps {}
 
