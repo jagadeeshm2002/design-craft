@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion,  useTransform } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
 
 const StarMask = ({ scale, rotate }: { scale: any; rotate: any }) => (
   <motion.path
@@ -74,5 +74,6 @@ const ScrollRevealSection: React.FC<pageProps> = ({
     </div>
   );
 };
+
 
 export default ScrollRevealSection;
