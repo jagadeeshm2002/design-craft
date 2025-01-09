@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Background from "../../../public/images/image1.jpg";
+import Background from "../../../public/images/mask-section-transition/image4.jpg";
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
@@ -16,12 +16,12 @@ export default function Section() {
   return (
     <div
       ref={container}
-      className="relative flex items-center justify-center h-screen overflow-hidden"
+      className="relative flex items-center justify-center h-screen overflow-hidden bg-white"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="relative z-10 p-20 mix-blend-difference text-white w-full h-full flex flex-col justify-between">
         
-        <p className="text-[5vw] uppercase mix-blend-difference">
+        <p className="text-[5vw] uppercase mix-blend-difference font-doto">
           Background Parallax
         </p>
       </div>
