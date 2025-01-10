@@ -8,6 +8,7 @@ export default function Home() {
     { name: "Background image parallax", link: "/background-image-parallax" },
     { name: "Mask section transition", link: "/mask-section-transition/1" },
     { name: "Mask section transition 2", link: "/mask-section-transition/2" },
+    {name:"Text Parallax",link:"/text-parallax"}
   ];
   return (
     <div className=" items-center justify-items-center min-h-screen sm:px-24 px-8 md:px-48 gap-16 py-10 sm:py-10 relative ">
