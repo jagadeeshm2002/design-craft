@@ -37,7 +37,7 @@ const Page = () => {
     ["0px", "3800px"]
   );
   const maskRotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  console.log(maskScale1);
+
 
   // Array of mask scales to map to each image
   const maskScales = [maskScale1, maskScale2, maskScale3];

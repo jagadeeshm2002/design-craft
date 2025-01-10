@@ -25,7 +25,7 @@ const TextParallax: React.FC<TextParallaxProps> = (props) => {
     [0, 1],
     [150 * direction, -150 * direction]
   );
-  console.log(leftMove);
+
   return (
     <motion.div
       className={`flex relative whitespace-nowrap  left-[${left}] ${props.className} my-4`}
