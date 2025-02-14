@@ -10,7 +10,11 @@ export default function Home() {
     { name: "Mask section transition 2", link: "/mask-section-transition/2" },
     { name: "Text Parallax", link: "/text-parallax" },
     { name: "Sticky Footer", link: "/sticky-footer" },
-    { name: "Perspective section transition", link: "/perspective-section-transition" },
+    {
+      name: "Perspective section transition",
+      link: "/perspective-section-transition",
+    },
+    { name: "Text Along Path", link: "/text-along-path" },
   ];
   return (
     <div className=" items-center justify-items-center min-h-screen sm:px-24 px-8 md:px-48 gap-16 py-10 sm:py-10 relative ">
