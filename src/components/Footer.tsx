@@ -30,7 +30,7 @@ export const FooterContent = () => {
               <ul>
                 {item.links.map((link) => {
                   return (
-                    <li className="capitalize text-sm text-red-50">{link}</li>
+                    <li className="capitalize text-sm text-red-50" key={link}>{link}</li>
                   );
                 })}
               </ul>
