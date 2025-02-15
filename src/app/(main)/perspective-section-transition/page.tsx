@@ -2,10 +2,10 @@
 import Lenis from "lenis";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import Picture from "../../../public/images/mask-section-transition/image4.jpg";
-import Picture2 from "../../../public/images/mask-section-transition/image5.jpg";
+import Picture from "../../../../public/images/mask-section-transition/image4.jpg";
+import Picture2 from "../../../../public/images/mask-section-transition/image5.jpg";
 import { motion, useScroll, useTransform } from "motion/react";
-import { MotionValue } from "motion";
+
 
 interface PageProps {}
 

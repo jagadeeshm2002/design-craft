@@ -2,9 +2,9 @@
 import TextParallax from "@/components/TextParallax";
 import Lenis from "lenis";
 import React, { useEffect } from "react";
-import image1 from "../../../public/images/mask-section-transition/image4.jpg";
-import image3 from "../../../public/images/mask-section-transition/image3.jpg";
-import image2 from "../../../public/images/mask-section-transition/image6.jpg";
+import image1 from "../../../../public/images/mask-section-transition/image4.jpg";
+import image3 from "../../../../public/images/mask-section-transition/image3.jpg";
+import image2 from "../../../../public/images/mask-section-transition/image6.jpg";
 interface PageProps {}
 
 const Page: React.FC<PageProps> = (props) => {

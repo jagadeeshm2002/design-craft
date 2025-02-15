@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Background from "../../../public/images/mask-section-transition/image4.jpg";
+import Background from "../../../../public/images/mask-section-transition/image4.jpg";
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";

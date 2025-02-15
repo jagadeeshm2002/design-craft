@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import image1 from "../../../../public/images/mask-section-transition/image4.jpg";
-import image2 from "../../../../public/images/mask-section-transition/image5.jpg";
-import image3 from "../../../../public/images/mask-section-transition/image6.jpg";
-import mask from "../../../../public/images/mask-section-transition/mask.svg";
+import image1 from "../../../../../public/images/mask-section-transition/image4.jpg";
+import image2 from "../../../../../public/images/mask-section-transition/image5.jpg";
+import image3 from "../../../../../public/images/mask-section-transition/image6.jpg";
+import mask from "../../../../../public/images/mask-section-transition/mask.svg";
 import Image from "next/image";
 import Lenis from "lenis";
 
