@@ -16,6 +16,7 @@ export default function Home() {
     },
     { name: "Text Along Path", link: "/text-along-path" },
     { name: "Path Animation", link: "/path-animation" },
+    { name: "Vertical Scroll",link:"/vertical-scroll" },
   ];
   return (
     <div className=" items-center justify-items-center min-h-screen sm:px-24 px-8 md:px-48 gap-16 py-10 sm:py-10 relative ">
