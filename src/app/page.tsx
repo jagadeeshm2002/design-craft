@@ -18,6 +18,12 @@ export default function Home() {
     { name: "Path Animation", link: "/path-animation" },
     { name: "Vertical Scroll", link: "/vertical-scroll" },
     { name: "Zoom Parallax", link: "/zoom-parallax" },
+    { name: "Parallax Scroll", link: "/parallax-scroll" },
+    { name: "Horizontal Scroll", link: "/horizontal-scroll" },
+    {
+      name: "Text Gradient Scroll Opacity",
+      link: "/text-gradient-scroll-opacity",
+    },
   ];
   return (
     <div className=" items-center justify-items-center min-h-screen sm:px-24 px-8 md:px-48 gap-16 py-10 sm:py-10 relative ">

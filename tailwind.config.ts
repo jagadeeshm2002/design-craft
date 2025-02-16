@@ -17,6 +17,7 @@ export default {
         playwrite: ["var(--font-playwrite)", "sans-serif"],
         doto: ["var(--font-doto)", "sans-serif"],
         inter: ["var(--font-inter)", "sans-serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
       listStyleImage: {
         component: "url(/svg/component.svg) ",
