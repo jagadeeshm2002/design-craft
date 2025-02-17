@@ -25,6 +25,7 @@ export default function Home() {
       link: "/text-gradient-scroll-opacity",
     },
     { name: "Cards Parallax", link: "/cards-parallax" },
+    { name: "3D Perspective Scroll", link: "/3d-perspective-scroll" },
   ];
   return (
     <div className=" items-center justify-items-center min-h-screen sm:px-24 px-8 md:px-48 gap-16 py-10 sm:py-10 relative ">
