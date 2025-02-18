@@ -21,7 +21,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Design Craft",
-  description: "simple design recraft by myself",
+  description: "simple web animations by Jagadeesh",
+  icons: "/svg/component.svg",
 };
 
 export default function RootLayout({
