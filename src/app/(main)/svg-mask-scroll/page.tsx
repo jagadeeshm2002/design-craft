@@ -102,13 +102,14 @@ const Page: React.FC<PageProps> = (props) => {
             }}
           >
             <video
-              src="/videos/car.mp4"
               className="w-full h-full object-cover"
               autoPlay
               muted
               loop
               playsInline
-            />
+            >
+              <source src="/videos/car.mp4" type="video/mp4" />
+            </video>
           </motion.div>
           <motion.div
             className="absolute top-0 w-full h-full bg-white z-10"
