@@ -21,19 +21,13 @@ const Page: React.FC<PageProps> = (props) => {
     offset: ["start end", "end start"],
   });
   const scrollY = useTransform(scrollYProgress, [0, 0.3], [0, 1000]);
-  const scale = useTransform(scrollYProgress, [0.3, 0.7], ["500px", "3000px"]);
+  const scale = useTransform(scrollYProgress, [0.3, 0.7], ["62vh", "400vh"]);
   const opacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
 
   const scrollVelocity = useVelocity(scrollY);
 
   const rawTranslateY = useTransform(scrollVelocity, [-100, 100], [-20, 20]);
   const translateY = useSpring(rawTranslateY, { stiffness: 150, damping: 30 });
-  useEffect(() => {
-    console.log("scrollY", scrollY);
-    console.log("scrollVelocity", scrollVelocity);
-    console.log("rawTranslateY", rawTranslateY);
-    console.log("translateY", translateY);
-  }, []);
 
   useEffect(() => {
     const lenis = new Lenis();

@@ -16,7 +16,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ pages }) => {
   const currentUrl = usePathname();
   const router = useRouter();
-  console.log(currentUrl);
+ 
 
   const selectedLink = useRef<HTMLSelectElement>(null);
 

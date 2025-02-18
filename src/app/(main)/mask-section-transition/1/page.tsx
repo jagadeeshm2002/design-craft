@@ -25,16 +25,16 @@ const Page = () => {
     requestAnimationFrame(raf);
   }, []);
 
-  const maskScale1 = useTransform(scrollYProgress, [0, 0.3], ["0px", "3800px"]);
+  const maskScale1 = useTransform(scrollYProgress, [0, 0.3], ["0vh", "500vh"]);
   const maskScale2 = useTransform(
     scrollYProgress,
     [0.35, 0.65],
-    ["0px", "3800px"]
+    ["0vh", "500vh"]
   );
   const maskScale3 = useTransform(
     scrollYProgress,
     [0.7, 0.9],
-    ["0px", "3800px"]
+    ["0vh", "500vh"]
   );
   const maskRotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
 
