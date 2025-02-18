@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ pages }) => {
     }
   };
   return (
-    <div className="w-full h-[60px] px-10 bg-gray-400 flex justify-between items-center">
+    <div className="w-full h-[60px] px-10 bg-gray-400 flex justify-between items-center relative z-10">
       <div className="bg-violet-950 p-2 rounded-2xl">
         <Image src="/svg/component.svg" width={30} height={30} alt="logo" />
       </div>
